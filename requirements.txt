@@ -1,4 +1,5 @@
-aiogram
-aiohttp
-cryptography
-requests
+aiogram==2.25.2
+aiohttp==3.9.3
+cryptography==42.0.7
+requests==2.31.0
+python-dotenv==1.0.1
