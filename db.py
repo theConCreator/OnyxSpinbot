@@ -37,6 +37,14 @@ def init_db():
         """)
         conn.commit()
 
+DB_NAME = "aura.db"
+
+def update_user_balance(user_id: int, new_balance: int):
+    with sqlite3.connect(DB_NAME) as conn:
+        c = conn.cursor()
+        c.execute("UPDATE users SET aura = ? WHERE user_id = ?", (new_balance, user_id))
+        conn.commit()
+
 def get_user(user_id):
     with closing(conn.cursor()) as cur:
         cur.execute("SELECT user_id, aura, referrer_id FROM users WHERE user_id = ?", (user_id,))
