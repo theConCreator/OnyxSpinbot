@@ -1,7 +1,7 @@
 import os
 
-BOT_TOKEN = os.getenv("8032705985:AAG0RbZMv0xMKJnqdIdh7Eyn-9Lr_YUKjKE")
-CRYPTO_BOT_TOKEN = os.getenv("425920:AAHEH1hjudduU2IUgOldnfR7HZ2zyZG0s0Q")
+TELEGRAM_BOT_TOKEN = os.getenv("8032705985:AAG0RbZMv0xMKJnqdIdh7Eyn-9Lr_YUKjKE")
+CRYPTOBOT_TOKEN = os.getenv("425920:AAHEH1hjudduU2IUgOldnfR7HZ2zyZG0s0Q")
 
 # Стоимости подарков
 GIFTS = {
