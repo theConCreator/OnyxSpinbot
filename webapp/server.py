@@ -2,7 +2,7 @@ import sys
 import os
 
 # Добавляем корневую директорию проекта в PYTHONPATH
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(file), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from aiohttp import web
 import json
